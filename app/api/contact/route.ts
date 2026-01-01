@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     const { name, email, service, message } = await request.json();
 
     const data = await resend.emails.send({
-      from: 'Top Docs UK <onboarding@resend.dev>', // Update this if they have a verified domain
+      from: 'Top Docs UK <contact@topdocs.uk>',
       to: 'contact@topdocs.uk',
       replyTo: email,
       subject: `New Order Request: ${service}`,
