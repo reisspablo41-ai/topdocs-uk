@@ -581,7 +581,7 @@ export default function Home() {
               Built for clarity and trust
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 mb-6">
-              Why choose Top Docs UK
+              Why choose Top Docz UK
             </h2>
             <p className="text-lg text-zinc-700 mb-8 leading-relaxed">
               A focused, one-page resource for UK documents with practical steps
@@ -807,7 +807,7 @@ export default function Home() {
           <motion.h2 variants={fadeInUp} className="text-2xl font-semibold">Order Now</motion.h2>
           <p className="mt-2 text-zinc-600">
             Choose your service and send us your request. You can also email us directly at
-            <a href="mailto:contact@topdocs.uk" className="text-teal-600 font-medium ml-1">contact@topdocs.uk</a>.
+            <a href="mailto:contact@topdocz.uk" className="text-teal-600 font-medium ml-1">contact@topdocz.uk</a>.
           </p>
           <div className="mt-6 grid gap-6 lg:grid-cols-2">
             <Card>
@@ -889,7 +889,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-4">
                     <Button type="submit" size="lg">Submit Order</Button>
-                    <a href="mailto:contact@topdocs.uk" className="text-teal-600 font-medium">contact@topdocs.uk</a>
+                    <a href="mailto:contact@topdocz.uk" className="text-teal-600 font-medium">contact@topdocz.uk</a>
                   </div>
                   {orderSubmitted && (
                     <p className="text-sm text-teal-600 mt-3">Thank you! We will get back to you shortly.</p>
@@ -903,7 +903,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc space-y-2 pl-6">
-                  <li>Email: <a href="mailto:contact@topdocs.uk" className="text-teal-600">contact@topdocs.uk</a></li>
+                  <li>Email: <a href="mailto:contact@topdocz.uk" className="text-teal-600">contact@topdocz.uk</a></li>
                   <li>24/7 support for quick questions and next steps</li>
                 </ul>
               </CardContent>
@@ -929,8 +929,8 @@ export default function Home() {
                   <li>Links to official resources and forms</li>
                 </ul>
                 <div className="mt-4">
-                  <a href="mailto:contact@topdocs.uk">
-                    <Button variant="outline">contact@topdocs.uk</Button>
+                  <a href="mailto:contact@topdocz.uk">
+                    <Button variant="outline">contact@topdocz.uk</Button>
                   </a>
                 </div>
               </CardContent>
@@ -1029,6 +1029,6 @@ export default function Home() {
           <p className="mt-2 text-zinc-700">Information is provided for guidance. Applications are submitted to official UK authorities.</p>
         </section>
       </div>
-    </main>
+    </main >
   );
 }

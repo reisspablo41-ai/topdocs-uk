@@ -8,8 +8,8 @@ export async function POST(request: Request) {
     const { name, email, service, message } = await request.json();
 
     const data = await resend.emails.send({
-      from: 'Top Docs UK <contact@topdocs.uk>',
-      to: 'contact@topdocs.uk',
+      from: 'Top Docz <contact@topdocz.uk>',
+      to: 'contact@topdocz.uk',
       replyTo: email,
       subject: `New Order Request: ${service}`,
       html: `

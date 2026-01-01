@@ -10,20 +10,20 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-zinc-200 bg-white backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-teal-700 transition-colors"
           onClick={() => setIsMenuOpen(false)}
         >
           <Image
             src="/images/logo.png"
-            alt="Top Docs UK Logo"
+            alt="Top Docz UK Logo"
             width={32}
             height={32}
             className="h-8 w-8 object-contain"
             priority
           />
-          <span className="hidden sm:inline">Top Docs UK</span>
+          <span className="hidden sm:inline">Top Docz UK</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Top Docs UK - UK Document Guidance & Support",
-    template: "%s | Top Docs UK",
+    default: "Top Docz UK - UK Document Guidance & Support",
+    template: "%s | Top Docz UK",
   },
   description: "Clear, practical help for UK passports, driving licences, photo ID cards, and residence permits. Professional guidance with straightforward steps and reliable timelines since 1995.",
   keywords: [
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "UK identity documents",
     "document support UK",
   ],
-  authors: [{ name: "Top Docs UK" }],
-  creator: "Top Docs UK",
-  publisher: "Top Docs UK",
+  authors: [{ name: "Top Docz UK" }],
+  creator: "Top Docz UK",
+  publisher: "Top Docz UK",
   icons: {
     icon: "/images/logo.png",
     apple: "/images/logo.png",
@@ -44,22 +44,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://topdocs.uk",
-    title: "Top Docs UK - UK Document Guidance & Support",
+    url: "https://topdocz.uk",
+    title: "Top Docz UK - UK Document Guidance & Support",
     description: "Clear, practical help for UK passports, driving licences, photo ID cards, and residence permits. Professional guidance with straightforward steps and reliable timelines.",
-    siteName: "Top Docs UK",
+    siteName: "Top Docz UK",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Top Docs UK Logo",
+        alt: "Top Docz UK Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Top Docs UK - UK Document Guidance & Support",
+    title: "Top Docz UK - UK Document Guidance & Support",
     description: "Clear, practical help for UK passports, driving licences, photo ID cards, and residence permits.",
     images: ["/images/logo.png"],
   },
