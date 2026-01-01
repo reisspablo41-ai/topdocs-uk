@@ -291,12 +291,12 @@ export default function Home() {
         className="w-full bg-teal-600 text-white py-12 md:py-16 lg:py-20 px-4 md:px-6"
       >
         <div className="mx-auto max-w-6xl">
-            <motion.h2
-              variants={fadeInUp}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center max-w-4xl mx-auto leading-tight mb-8"
-            >
-              Our mission: clear UK guidance, every step
-            </motion.h2>
+          <motion.h2
+            variants={fadeInUp}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center max-w-4xl mx-auto leading-tight mb-8"
+          >
+            Our mission: clear UK guidance, every step
+          </motion.h2>
           <motion.div variants={fadeInUp} className="flex justify-center">
             <Link href="/#contact">
               <Button
@@ -816,9 +816,20 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <form
-                  onSubmit={(e) => {
+                  onSubmit={async (e) => {
                     e.preventDefault();
-                    setOrderSubmitted(true);
+                    setOrderSubmitted(false);
+                    const res = await fetch('/api/contact', {
+                      method: 'POST',
+                      body: JSON.stringify(orderForm),
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                    });
+                    if (res.ok) {
+                      setOrderSubmitted(true);
+                      setOrderForm({ name: '', email: '', service: '', message: '' });
+                    }
                   }}
                   className="space-y-4"
                 >
